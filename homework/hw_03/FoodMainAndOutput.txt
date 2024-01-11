@@ -1,0 +1,43 @@
+import java.util.Date;
+class MainClass
+{
+  public static void main(String args[])
+  { 
+	  Date d = new Date(2000000000);
+	  Food gum = new Food("gum");
+	  Food las = new Food("lasagna");
+	  Fruit pom  = new Fruit(d, "pomegranate");
+	  Fruit app = new Apple(d);
+	  Orange o = new Orange(d);
+	  Shrimp sh = new Shrimp();	  
+  Seafood p = new Prawn();
+	  Seafood l = new Seafood("lobster");
+	  
+	  sh.prepare();
+	  app.prepare();
+	  pom.prepare();
+	  o.prepare();
+	  gum.prepare();
+	  p.prepare();
+	  l.prepare();
+	  las.prepare();
+
+	  las = app; 
+	  las.prepare();
+	  
+	  o.ripeTime();
+	  pom.ripeTime();
+  }
+}
+
+Peel the shrimp
+Core the apple
+Prepare the pomegranate
+Peel the orange
+Prepare the gum
+Peel the prawn
+Peel the lobster
+Prepare the lasagna
+Core the apple
+You can eat it on Fri Jan 23 19:33:20 PST 1970
+You can eat it on Fri Jan 23 19:33:20 PST 1970
